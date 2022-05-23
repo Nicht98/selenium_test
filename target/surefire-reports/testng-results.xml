@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="24093" started-at="2022-05-18T17:58:42 CEST" finished-at="2022-05-18T17:59:06 CEST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@aecb35a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="24093" started-at="2022-05-18T17:58:42 CEST" finished-at="2022-05-18T17:59:06 CEST">
+      <class name="runners.TestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@aecb35a]" name="setUpClass" is-config="true" duration-ms="594" started-at="2022-05-18T17:58:42 CEST" finished-at="2022-05-18T17:58:43 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@9efcd90]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:runners.TestRunner@aecb35a]" name="beforeTest" is-config="true" duration-ms="2508" started-at="2022-05-18T17:58:43 CEST" finished-at="2022-05-18T17:58:45 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@aecb35a]" name="runScenario" duration-ms="20063" started-at="2022-05-18T17:58:45 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T17:59:05 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional.empty"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:runners.TestRunner@aecb35a]" name="afterTest" is-config="true" duration-ms="826" started-at="2022-05-18T17:59:05 CEST" finished-at="2022-05-18T17:59:06 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@aecb35a]" name="tearDownClass" is-config="true" duration-ms="72" started-at="2022-05-18T17:59:06 CEST" finished-at="2022-05-18T17:59:06 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
