@@ -14,6 +14,9 @@ public class LoginPage extends Page {
     @FindBy(id = "btn_login")
     private WebElement connectionButton;
 
+    @FindBy( xpath = "//h1[contains(text(),'Connexion')]")
+    private WebElement logInLogos;
+
     public void load() {
         get(ENV.getUrl("/auth/login"));
     }
@@ -21,6 +24,11 @@ public class LoginPage extends Page {
     public void fillLoginForm(String email, String password) {
         sendKeysSlowly(emailField, email);
         sendKeysSlowly(passwordField, password);
+    }
+
+    public String loginTextDisplayed(){
+        System.out.println("The logInpage text is : "+logInLogos.getText());
+        return logInLogos.getText();
     }
 
     public void login() {

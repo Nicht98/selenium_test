@@ -153,6 +153,11 @@ public class Page {
         }
     }
 
+    public void hoverClick( WebElement webElement){
+        Actions action = new Actions(this.driver);
+        action.moveToElement(webElement).perform();
+    }
+
     // public void navigateTo(String link) {
     //     get(config.getEnvironment() + link);
     // }

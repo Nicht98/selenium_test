@@ -1,2 +1,5 @@
+steps\NavigateToWhishlist.class
+steps\ClearCartSteps.class
+steps\SignOutSteps.class
 steps\AddProductToCartSteps.class
 steps\LoginSteps.class

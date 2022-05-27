@@ -1,7 +1,9 @@
-C:\Users\Admin\Documents\Selenium_test\selenium-test-framework2\selenium-test-framework\src\test\java\steps\HomeSteps.java
-C:\Users\Admin\Documents\Selenium_test\selenium-test-framework2\selenium-test-framework\src\test\java\steps\SignUpSteps.java
-C:\Users\Admin\Documents\Selenium_test\selenium-test-framework2\selenium-test-framework\src\test\java\runners\TestRunner.java
-C:\Users\Admin\Documents\Selenium_test\selenium-test-framework2\selenium-test-framework\src\test\java\steps\goToSignUpSteps.java
-C:\Users\Admin\Documents\Selenium_test\selenium-test-framework2\selenium-test-framework\src\test\java\steps\LoginSteps.java
-C:\Users\Admin\Documents\Selenium_test\selenium-test-framework2\selenium-test-framework\src\test\java\steps\SearchProductSteps.java
-C:\Users\Admin\Documents\Selenium_test\selenium-test-framework2\selenium-test-framework\src\test\java\steps\AddProductToCartSteps.java
+C:\Users\Admin\Documents\Selenium_test\selenium\selenium_test\src\test\java\steps\NavigateToWhishlist.java
+C:\Users\Admin\Documents\Selenium_test\selenium\selenium_test\src\test\java\steps\goToSignUpSteps.java
+C:\Users\Admin\Documents\Selenium_test\selenium\selenium_test\src\test\java\steps\SearchProductSteps.java
+C:\Users\Admin\Documents\Selenium_test\selenium\selenium_test\src\test\java\steps\LoginSteps.java
+C:\Users\Admin\Documents\Selenium_test\selenium\selenium_test\src\test\java\steps\SignUpSteps.java
+C:\Users\Admin\Documents\Selenium_test\selenium\selenium_test\src\test\java\runners\TestRunner.java
+C:\Users\Admin\Documents\Selenium_test\selenium\selenium_test\src\test\java\steps\HomeSteps.java
+C:\Users\Admin\Documents\Selenium_test\selenium\selenium_test\src\test\java\steps\SignOutSteps.java
+C:\Users\Admin\Documents\Selenium_test\selenium\selenium_test\src\test\java\steps\AddProductToCartSteps.java

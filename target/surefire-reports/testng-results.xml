@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="24093" started-at="2022-05-18T17:58:42 CEST" finished-at="2022-05-18T17:59:06 CEST">
+  <suite name="Surefire suite" duration-ms="55637" started-at="2022-05-27T13:30:20 CEST" finished-at="2022-05-27T13:31:16 CEST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@aecb35a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="24093" started-at="2022-05-18T17:58:42 CEST" finished-at="2022-05-18T17:59:06 CEST">
+    <test name="Surefire test" duration-ms="55637" started-at="2022-05-27T13:30:20 CEST" finished-at="2022-05-27T13:31:16 CEST">
       <class name="runners.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@aecb35a]" name="setUpClass" is-config="true" duration-ms="594" started-at="2022-05-18T17:58:42 CEST" finished-at="2022-05-18T17:58:43 CEST">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@aecb35a]" name="setUpClass" is-config="true" duration-ms="659" started-at="2022-05-27T13:30:20 CEST" finished-at="2022-05-27T13:30:21 CEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@9efcd90]]>
+                <![CDATA[org.testng.TestRunner@138aa3cc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:runners.TestRunner@aecb35a]" name="beforeTest" is-config="true" duration-ms="2508" started-at="2022-05-18T17:58:43 CEST" finished-at="2022-05-18T17:58:45 CEST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:runners.TestRunner@aecb35a]" name="beforeTest" is-config="true" duration-ms="3334" started-at="2022-05-27T13:30:21 CEST" finished-at="2022-05-27T13:30:24 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@aecb35a]" name="runScenario" duration-ms="20063" started-at="2022-05-18T17:58:45 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T17:59:05 CEST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@aecb35a]" name="runScenario" duration-ms="50784" started-at="2022-05-27T13:30:24 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T13:31:15 CEST">
           <params>
             <param index="0">
               <value>
@@ -34,18 +34,64 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional.empty"]]>
+                <![CDATA["Optional[Clear all the element in the cart]"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div:nth-child(1) div.style_container_cart__WEZ1i:nth-child(1) div:nth-child(2) div:nth-child(1) > p:nth-child(2)"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-8QDPD46', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [486dc0fbb872e672a66fabacd0376f64, findElement {using=css selector, value=div:nth-child(1) div.style_container_cart__WEZ1i:nth-child(1) div:nth-child(2) div:nth-child(1) > p:nth-child(2)}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57283/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 486dc0fbb872e672a66fabacd0376f64]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div:nth-child(1) div.style_container_cart__WEZ1i:nth-child(1) div:nth-child(2) div:nth-child(1) > p:nth-child(2)"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-8QDPD46', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [486dc0fbb872e672a66fabacd0376f64, findElement {using=css selector, value=div:nth-child(1) div.style_container_cart__WEZ1i:nth-child(1) div:nth-child(2) div:nth-child(1) > p:nth-child(2)}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57283/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 486dc0fbb872e672a66fabacd0376f64
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)
+at pageObjects.HomePage.isEmptyMessage(HomePage.java:153)
+at steps.ClearCartSteps.theItemsANoMoreVisible(ClearCartSteps.java:40)
+at ✽.the items a no more visible(file:///C:/Users/Admin/Documents/Selenium_test/selenium/selenium_test/src/test/resources/features/clearTheCart.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:runners.TestRunner@aecb35a]" name="afterTest" is-config="true" duration-ms="826" started-at="2022-05-18T17:59:05 CEST" finished-at="2022-05-18T17:59:06 CEST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:runners.TestRunner@aecb35a]" name="afterTest" is-config="true" duration-ms="768" started-at="2022-05-27T13:31:15 CEST" finished-at="2022-05-27T13:31:16 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@aecb35a]" name="tearDownClass" is-config="true" duration-ms="72" started-at="2022-05-18T17:59:06 CEST" finished-at="2022-05-18T17:59:06 CEST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@aecb35a]" name="tearDownClass" is-config="true" duration-ms="53" started-at="2022-05-27T13:31:16 CEST" finished-at="2022-05-27T13:31:16 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

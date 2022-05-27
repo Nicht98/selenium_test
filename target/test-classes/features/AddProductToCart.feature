@@ -1,5 +1,5 @@
 @addProduct
-Feature:
+Feature: add a product to the cart
 
   Background:
     Given User is on the login page

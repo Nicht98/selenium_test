@@ -16,7 +16,7 @@ public class AddProductToCartSteps {
     }
         @Given("^user at the HomePage$")
         public void userAtHomePage(){
-           assertTrue( homePage.haveLogo());
+        assertTrue( homePage.haveLogo());
         }
 
     @When("select a product to cart")
@@ -31,7 +31,6 @@ public class AddProductToCartSteps {
     @Then("^the cart is update$")
     public void theCartIsUpdate (){
         homePage.goToCart();
-        //assertTrue(homePage.isCartPageEmpty());
+        assertTrue(homePage.isCartPageEmpty());
         }
-
 }

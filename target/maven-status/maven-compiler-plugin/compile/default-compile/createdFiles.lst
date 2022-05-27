@@ -1,6 +1,7 @@
 driverManager\WebDriverManager.class
 config\Properties.class
 drivers\Driver.class
+pageObjects\WhislistPage.class
 pageObjects\HomePage.class
 drivers\DriverFactory.class
 config\FilePropertiesReader.class
