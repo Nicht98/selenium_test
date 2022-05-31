@@ -1,9 +1,11 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -38,9 +40,15 @@ public class HomePage extends Page {
     @FindBy (linkText = "Mes favoris")
     WebElement whishlist_btn;
 
+    @FindBy(className = "style_btn_add_cart__WFoN1")
+    WebElement addTocartBtnHover;
 
-    @FindBy (css = "style_card_wrapper__hrc1I")
+    @FindBy (id = "style_card_wrapper__hrc1I")
     private List <WebElement> cartItem;
+
+   /* @FindBy (css = "style_card_wrapper__hrc1I")
+    private List <WebElement> cartItem;*/
+
 
     @FindBy (className = "style_trash_product_cart__7Yzni")
     private WebElement delete_btn;
@@ -60,6 +68,20 @@ public class HomePage extends Page {
 
      @FindBy (className = "style_quantity_in__XmF4D")
      private WebElement add_btn;
+
+     @FindBy(className = "style_quantity__qJbQ3")
+     private WebElement itemQuant;
+
+
+     @FindBy(className = "style_card__gNEqX")
+     List <WebElement> listOfItems;
+
+     @FindBy( css = "div.style_container_cart__WEZ1i:nth-child(1) div:nth-child(2) div.style_card__JLMp6 div.style_card_body__EhpLW:nth-child(2) > p:nth-child(2)")
+     private WebElement itemPrice;
+
+
+
+
 
     public boolean userLogoDisplayed(){
         return shortUntil(visibilityOf(userLogo));
@@ -116,8 +138,7 @@ public class HomePage extends Page {
 
     public boolean isCartPageEmpty(){
         shortUntil(visibilityOf(cartPage));
-        System.out.println("le logo est : " +!cartPage.isDisplayed());
-        return !cartPage.isDisplayed();
+        return cartPage.isDisplayed();
     }
 
     public void logOut(){
@@ -136,6 +157,54 @@ public class HomePage extends Page {
 
     }
 
+    public void addItemToCart(String productName){
+        middleUntil(ExpectedConditions.visibilityOfAllElements());
+        for (int i=0; i<listOfItems.size();i++){
+           if (listOfItems.get(i).getText().contains(productName)){
+               //listOfItems.get(i).click();
+               addToCartHover(listOfItems.get(i),i+1);
+               break;
+
+           } else {
+               addToCartHover(listOfItems.get(0),1);
+           }
+
+        }
+    }
+
+    public boolean isTheItemInTheCart (String productName){
+       middleUntil(ExpectedConditions.visibilityOfAllElements());
+        boolean rep =false;
+        for (int i=0; i< cartItem.size(); i++){
+            if(cartItem.get(i).getText().contains(productName)){
+                return rep= true;
+            }
+        }
+        return rep;
+    }
+
+    public void addToCartHover(WebElement wb,int i){
+        shortUntil(ExpectedConditions.visibilityOfAllElements(addTocartBtnHover));
+        hoverClick(wb);
+        WebElement addProductToCart = this.driver.findElement(By.cssSelector("#style_popular_product_wrapper__z6J0h > div:nth-child("+i+") > div.style_card_footer__q1lbJ > button"));
+        try {
+            clickOn(addProductToCart);
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
+    }
+
+    public void hoverItem(){
+        shortUntil(ExpectedConditions.visibilityOfAllElements());
+        hoverClick(productImage);
+    }
+
+
+    public String getItemPriceInCart(){
+      return  itemPrice.getText().replace("€","");
+    }
+
     public int getCartsize(){
             return cartItem.size();
     }
@@ -145,7 +214,7 @@ public class HomePage extends Page {
     }
 
     public void increaseQuant(){
-        add_btn.click();
+        clickOn(add_btn);
     }
 
     public boolean isEmptyMessage(){
@@ -156,6 +225,8 @@ public class HomePage extends Page {
     /*public void closeDetailProductPage(){
         clickOn(closeDetailbtn);
     }*/
+
+
 
     public void waitUntilOption(){
         shortUntil(ExpectedConditions.visibilityOfAllElements());

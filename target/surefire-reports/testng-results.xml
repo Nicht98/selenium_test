@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="55637" started-at="2022-05-27T13:30:20 CEST" finished-at="2022-05-27T13:31:16 CEST">
+  <suite name="Surefire suite" duration-ms="163392" started-at="2022-05-28T01:36:32 CEST" finished-at="2022-05-28T01:39:16 CEST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@aecb35a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="55637" started-at="2022-05-27T13:30:20 CEST" finished-at="2022-05-27T13:31:16 CEST">
+    <test name="Surefire test" duration-ms="163392" started-at="2022-05-28T01:36:32 CEST" finished-at="2022-05-28T01:39:16 CEST">
       <class name="runners.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@aecb35a]" name="setUpClass" is-config="true" duration-ms="659" started-at="2022-05-27T13:30:20 CEST" finished-at="2022-05-27T13:30:21 CEST">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@aecb35a]" name="setUpClass" is-config="true" duration-ms="707" started-at="2022-05-28T01:36:32 CEST" finished-at="2022-05-28T01:36:33 CEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@138aa3cc]]>
+                <![CDATA[org.testng.TestRunner@4ffced4e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:runners.TestRunner@aecb35a]" name="beforeTest" is-config="true" duration-ms="3334" started-at="2022-05-27T13:30:21 CEST" finished-at="2022-05-27T13:30:24 CEST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:runners.TestRunner@aecb35a]" name="beforeTest" is-config="true" duration-ms="3391" started-at="2022-05-28T01:36:33 CEST" finished-at="2022-05-28T01:36:37 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@aecb35a]" name="runScenario" duration-ms="50784" started-at="2022-05-27T13:30:24 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-27T13:31:15 CEST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@aecb35a]" name="runScenario" duration-ms="82208" started-at="2022-05-28T01:36:37 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-28T01:37:59 CEST">
           <params>
             <param index="0">
               <value>
@@ -34,34 +34,33 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Clear all the element in the cart]"]]>
+                <![CDATA["Optional[add a product to the cart]"]]>
               </value>
             </param>
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div:nth-child(1) div.style_container_cart__WEZ1i:nth-child(1) div:nth-child(2) div:nth-child(1) > p:nth-child(2)"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Votre panier est vide')]"}
   (Session info: chrome=101.0.4951.67)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'DESKTOP-8QDPD46', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+System info: host: 'DESKTOP-8QDPD46', ip: '192.168.43.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [486dc0fbb872e672a66fabacd0376f64, findElement {using=css selector, value=div:nth-child(1) div.style_container_cart__WEZ1i:nth-child(1) div:nth-child(2) div:nth-child(1) > p:nth-child(2)}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57283/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 486dc0fbb872e672a66fabacd0376f64]]>
+Command: [7b68b3c4808bceef1b38efaf58ff7627, findElement {using=xpath, value=//p[contains(text(),'Votre panier est vide')]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65396/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b68b3c4808bceef1b38efaf58ff7627]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div:nth-child(1) div.style_container_cart__WEZ1i:nth-child(1) div:nth-child(2) div:nth-child(1) > p:nth-child(2)"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Votre panier est vide')]"}
   (Session info: chrome=101.0.4951.67)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'DESKTOP-8QDPD46', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+System info: host: 'DESKTOP-8QDPD46', ip: '192.168.43.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [486dc0fbb872e672a66fabacd0376f64, findElement {using=css selector, value=div:nth-child(1) div.style_container_cart__WEZ1i:nth-child(1) div:nth-child(2) div:nth-child(1) > p:nth-child(2)}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57283}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57283/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 486dc0fbb872e672a66fabacd0376f64
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Command: [7b68b3c4808bceef1b38efaf58ff7627, findElement {using=xpath, value=//p[contains(text(),'Votre panier est vide')]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65396/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b68b3c4808bceef1b38efaf58ff7627
+at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
@@ -78,20 +77,81 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
 at com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)
-at pageObjects.HomePage.isEmptyMessage(HomePage.java:153)
-at steps.ClearCartSteps.theItemsANoMoreVisible(ClearCartSteps.java:40)
-at ✽.the items a no more visible(file:///C:/Users/Admin/Documents/Selenium_test/selenium/selenium_test/src/test/resources/features/clearTheCart.feature:14)
+at pageObjects.HomePage.isCartPageEmpty(HomePage.java:141)
+at steps.addProductByName.theCartIsUpdate(addProductByName.java:40)
+at ✽.then the "Chaise" is add to cart(file:///C:/Users/Admin/Documents/Selenium_test/selenium/selenium_test/src/test/resources/features/addProductByNameToCart.feature:13)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:runners.TestRunner@aecb35a]" name="afterTest" is-config="true" duration-ms="768" started-at="2022-05-27T13:31:15 CEST" finished-at="2022-05-27T13:31:16 CEST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@aecb35a]" name="runScenario" duration-ms="76187" started-at="2022-05-28T01:37:59 CEST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-28T01:39:15 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[add a product to the cart]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Votre panier est vide')]"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-8QDPD46', ip: '192.168.43.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b68b3c4808bceef1b38efaf58ff7627, findElement {using=xpath, value=//p[contains(text(),'Votre panier est vide')]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65396/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b68b3c4808bceef1b38efaf58ff7627]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'Votre panier est vide')]"}
+  (Session info: chrome=101.0.4951.67)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'DESKTOP-8QDPD46', ip: '192.168.43.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7b68b3c4808bceef1b38efaf58ff7627, findElement {using=xpath, value=//p[contains(text(),'Votre panier est vide')]}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65396}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65396/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b68b3c4808bceef1b38efaf58ff7627
+at sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)
+at pageObjects.HomePage.isCartPageEmpty(HomePage.java:141)
+at steps.addProductByName.theCartIsUpdate(addProductByName.java:40)
+at ✽.then the "Ampoule" is add to cart(file:///C:/Users/Admin/Documents/Selenium_test/selenium/selenium_test/src/test/resources/features/addProductByNameToCart.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:runners.TestRunner@aecb35a]" name="afterTest" is-config="true" duration-ms="809" started-at="2022-05-28T01:39:15 CEST" finished-at="2022-05-28T01:39:16 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@aecb35a]" name="tearDownClass" is-config="true" duration-ms="53" started-at="2022-05-27T13:31:16 CEST" finished-at="2022-05-27T13:31:16 CEST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@aecb35a]" name="tearDownClass" is-config="true" duration-ms="56" started-at="2022-05-28T01:39:16 CEST" finished-at="2022-05-28T01:39:16 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
